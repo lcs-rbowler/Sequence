@@ -23,6 +23,33 @@ import PlaygroundSupport
 // Create a new canvas
 let canvas = Canvas(width: 300, height: 500)
 
+// location
+canvas.translate(byX: 0, byY: 50)
+
+// arms
+canvas.rotate(by: 45)
+canvas.drawEllipse(centreX: 180, centreY: 100, width: 50, height: 100)
+canvas.rotate(by: -90)
+canvas.drawEllipse(centreX: 30, centreY: 310, width: 50, height: 100)
+canvas.rotate(by: 45)
+
+// legs
+canvas.translate(byX: 210, byY: 50)
+canvas.rotate(by: 45)
+canvas.drawEllipse(centreX: 0, centreY: 0, width: 50, height: 100)
+canvas.rotate(by: -45)
+canvas.translate(byX: -210, byY: -50)
+canvas.translate(byX: 80, byY: 50)
+canvas.rotate(by: -45)
+canvas.drawEllipse(centreX: 0, centreY: 0, width: 50, height: 100)
+canvas.rotate(by: 45)
+canvas.translate(byX: -80, byY: -50)
+
+// body
+canvas.drawEllipse(centreX: 150, centreY: 150, width: 180, height: 300)
+canvas.fillColor = Color.white
+canvas.drawEllipse(centreX: 150, centreY: 100, width: 100, height: 160)
+
 // ears
 canvas.fillColor = Color.black
 canvas.drawEllipse(centreX: 220, centreY: 350, width: 50, height: 50)
@@ -59,7 +86,6 @@ canvas.drawEllipse(centreX: 150, centreY: 270, width: 40, height: 20)
 canvas.fillColor = Color.init(hue: 0, saturation: 50, brightness: 100, alpha: 50)
 canvas.drawEllipse(centreX: 90, centreY: 280, width: 40, height: 20)
 canvas.drawEllipse(centreX: 210, centreY: 280, width: 40, height: 20)
-
 
 
 // This code is necessary to see the result in the Assistant Editor at right
