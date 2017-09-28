@@ -34,16 +34,16 @@ canvas.drawEllipse(centreX: 30, centreY: 310, width: 50, height: 100)
 canvas.rotate(by: 45)
 
 // legs
-canvas.translate(byX: 210, byY: 50)
+canvas.translate(byX: 200, byY: 40)
 canvas.rotate(by: 45)
 canvas.drawEllipse(centreX: 0, centreY: 0, width: 50, height: 100)
 canvas.rotate(by: -45)
-canvas.translate(byX: -210, byY: -50)
-canvas.translate(byX: 80, byY: 50)
+canvas.translate(byX: -200, byY: -40)
+canvas.translate(byX: 90, byY: 40)
 canvas.rotate(by: -45)
 canvas.drawEllipse(centreX: 0, centreY: 0, width: 50, height: 100)
 canvas.rotate(by: 45)
-canvas.translate(byX: -80, byY: -50)
+canvas.translate(byX: -90, byY: -40)
 
 // body
 canvas.drawEllipse(centreX: 150, centreY: 150, width: 180, height: 300)
@@ -87,6 +87,13 @@ canvas.fillColor = Color.init(hue: 0, saturation: 50, brightness: 100, alpha: 50
 canvas.drawEllipse(centreX: 90, centreY: 280, width: 40, height: 20)
 canvas.drawEllipse(centreX: 210, centreY: 280, width: 40, height: 20)
 
+// bamboo shute
+canvas.fillColor = Color.green
+canvas.translate(byX:40, byY: 130)
+canvas.drawRectangle(centreX: 0, centreY: 0, width: 10, height: 300)
+canvas.translate(byX: -40, byY: -130)
+canvas.drawEllipse(centreX: 32, centreY: 250, width: 20, height: 20)
+canvas.drawRectangle(centreX: 25, centreY: 255, width: 7, height: 12)
 
 // This code is necessary to see the result in the Assistant Editor at right
 PlaygroundPage.current.liveView = canvas.imageView
